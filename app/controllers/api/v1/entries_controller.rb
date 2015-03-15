@@ -1,7 +1,7 @@
 module Api
   module V1
 
-    class EntryController < ApplicationController
+    class EntriesController < ApplicationController
       def index
         @entries = Entry.all
         render json: @entries
