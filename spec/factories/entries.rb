@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :entry do
+  factory :entries do
     title "MyString"
 content "MyText"
   end
