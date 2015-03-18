@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'mysql2'
 gem 'jbuilder', '~> 2.0'
+gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 
 group :development, :test do
   gem 'typescript-rails', '~> 0.4.2'
