@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'entries#index'
 
-  resources :entries
+  resources :entries, {format: 'html'}
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
