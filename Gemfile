@@ -4,9 +4,12 @@ gem 'rails', '4.2.0'
 gem 'mysql2'
 gem 'jbuilder', '~> 2.0'
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'slim-rails'
+
+gem 'by_star', git: 'https://github.com/radar/by_star.git'
+gem 'meta-tags'
 
 group :development, :test do
-  gem 'typescript-rails', '~> 0.4.2'
   gem 'byebug'
   gem 'web-console', '~> 2.0.0.beta4'
   gem 'spring'
@@ -25,6 +28,7 @@ group :development do
 end
 
 group :test do
+  gem 'faker'
   gem 'database_cleaner'
 end
 
