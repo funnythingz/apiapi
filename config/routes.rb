@@ -5,9 +5,7 @@ Rails.application.routes.draw do
   resources :entries, {format: 'html'}
 
   namespace :api, {format: 'json'} do
-    namespace :v1 do
-      resources :entries
-    end
+    resources :entries
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
