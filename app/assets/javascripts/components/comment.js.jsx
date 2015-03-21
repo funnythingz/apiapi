@@ -3,7 +3,7 @@ var Comment = React.createClass({
         return (
             <div className="comment">
                 <h2 className="commentAuthor">
-                    {this.props.author}
+                    {this.props.title}
                 </h2>
                 <p>
                     {this.props.children}
