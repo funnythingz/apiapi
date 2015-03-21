@@ -1,4 +1,4 @@
-var CommentForm = React.createClass({
+var EntryForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
 
@@ -8,14 +8,15 @@ var CommentForm = React.createClass({
         if (!title || !content) {
             return;
         }
-        this.props.onCommentSubmit({title: title, content: content});
+        this.props.onEntrySubmit({title: title, content: content});
+
         React.findDOMNode(this.refs.title).value = '';
         React.findDOMNode(this.refs.content).value = '';
     },
 
     render: function() {
         return (
-            <form class="commentForm" onSubmit={this.handleSubmit}>
+            <form class="entryForm" onSubmit={this.handleSubmit}>
                 <input type="text" placeholfer="Title?" ref="title" />
                 <input type="content" placeholfer="Content?" ref="content" />
                 <input type="submit" value="Yo!" />

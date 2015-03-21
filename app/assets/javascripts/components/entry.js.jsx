@@ -1,8 +1,8 @@
-var Comment = React.createClass({
+var Entry = React.createClass({
     render: function() {
         return (
-            <div className="comment">
-                <h2 className="commentAuthor">
+            <div className="entry">
+                <h2 className="entryTitle">
                     {this.props.title}
                 </h2>
                 <p>
