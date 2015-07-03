@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'mysql2'
 gem 'jbuilder', '~> 2.0'
-gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'react-rails', '~> 1.0.0'
 gem 'slim-rails'
 
 gem 'by_star', git: 'https://github.com/radar/by_star.git'

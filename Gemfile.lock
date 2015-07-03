@@ -1,15 +1,4 @@
 GIT
-  remote: git://github.com/reactjs/react-rails.git
-  revision: b6538ae1b11f7da82a7186929cedc0dcbba10ae3
-  specs:
-    react-rails (1.0.0.pre)
-      coffee-script-source (~> 1.9)
-      connection_pool
-      execjs
-      rails (>= 3.1)
-      react-source (~> 0.12)
-
-GIT
   remote: https://github.com/radar/by_star.git
   revision: 670451fbc66bbf1e149ac20173cbe0ecb95d4fba
   specs:
@@ -66,14 +55,14 @@ GEM
       columnize (= 0.9.0)
       rb-readline (= 0.5.2)
     coderay (1.1.0)
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     columnize (0.9.0)
-    connection_pool (2.1.2)
+    connection_pool (2.2.0)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     erubis (2.7.0)
-    execjs (2.4.0)
+    execjs (2.5.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -149,7 +138,13 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rb-readline (0.5.2)
-    react-source (0.13.1)
+    react-rails (1.0.0)
+      coffee-script-source (~> 1.8)
+      connection_pool
+      execjs
+      rails (>= 3.1)
+      react-source (~> 0.13)
+    react-source (0.13.3)
     rspec-core (3.2.2)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.0)
@@ -221,9 +216,12 @@ DEPENDENCIES
   pry-stack_explorer
   quiet_assets
   rails (= 4.2.0)
-  react-rails (~> 1.0.0.pre)!
+  react-rails (~> 1.0.0)
   rspec-rails (~> 3.0)
   slim-rails
   spring
   tapp
   web-console (~> 2.0.0.beta4)
+
+BUNDLED WITH
+   1.10.3
